@@ -12,6 +12,7 @@ The purpose of the lab is to create a controlled environment where cybersecurity
 The lab is configured on a private virtual network so that additional machines can be added later and used as targets for authorized security testing.
 
 
+
 🎯 Objectives
 The main objectives of this project are to:
 
@@ -38,10 +39,10 @@ Exploitation practice
 Security-tool experimentation
 ⚠️ Important: This laboratory must only be used for systems that you own or have explicit permission to test. Do not use the lab or its tools to attack unauthorized systems.
 
-🏗️ Lab Architecture
 
 
-Additional target machines can be added to the same virtual network in future projects.
+
+
 
 
 🪜 Lab Setup Procedure
@@ -82,43 +83,18 @@ RAM: 2048 MB
 Step 5. Configure the Kali Linux Network
 The Kali Linux network configuration was checked and configured with a consistent IPv4 address.
 
-Example configuration:
-
-IP Address: 10.0.0.2
-Subnet Mask: 255.255.255.0
-Gateway: 10.0.0.1
-DNS: 8.8.8.8
-A consistent IP address makes it easier to document the lab and reference the Kali machine in future exercises.
-
-
-
 Step 6. Create a Clean VM Snapshot
 After completing the initial configuration, a VirtualBox snapshot was created.
 
 Example snapshot name:
 
-Clean Kali - Network Setup
+Kali - Network Setup
 The snapshot represents the clean baseline of the laboratory.
 
 If a future exercise changes or damages the VM configuration, the machine can be restored to this baseline.
 
-🔎 Lab Verification
-✅ Test	🧾 Command	🎯 Expected Result
-🌐 Check IP address	ip a	Correct Kali IP displayed
-📡 Test gateway	ping 10.0.0.1	Successful replies
-🌍 Test Internet connectivity	ping 8.8.8.8	Successful replies
-🔎 Test DNS resolution	nslookup networkwalks.com	Domain resolves
-🧰 Verify Nmap	nmap --version	Nmap version displayed
-🔄 Verify snapshot	Restore snapshot and run ip a	Baseline configuration restored
-Example Results
-IP Address:
-10.0.0.2/24
 
-Gateway:
-10.0.0.1
 
-DNS:
-8.8.8.8
 🐞 Problems Encountered & Solutions
 Documenting problems is an important part of the project.
 
@@ -144,6 +120,9 @@ Saving the configuration.
 Restarting the computer.
 Starting the Kali VM again.
 After enabling virtualization, the VM started successfully.
+
+
+
 
 💡 What I Learned
 Through this project, I learned how to create and configure a virtual environment for cybersecurity practice.
